@@ -3,445 +3,257 @@
 <!--[if IE 7]>    <html class="ie lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>    <html class="ie lt-ie9"> <![endif]-->
 <!--[if gt IE 8]> <html> <![endif]-->
-<!--[if !IE]><!--><html lang="en"><!-- <![endif]-->
+<!--[if !IE]><!--><html lang="vi"><!-- <![endif]-->
 <head>
-	<title>Happy Birthday</title>
-	<meta charset="UTF-8" />
-	<meta name="description" content="Happy Birthday Anggie">
-	<meta name="robots" content="index, follow" />
+  <title>Chúc Mừng Sinh Nhật Ngọc Hạ</title>
+  <meta charset="UTF-8" />
+  <meta name="description" content="Chúc Mừng Sinh Nhật Ngọc Hạ" />
+  <meta name="robots" content="index, follow" />
   <link rel="icon" href="favicon.ico" type="image/x-icon">
-	<link rel="author" href="alex" /> 
-    <meta name="keywords" content="Birthday, Happy">
-    <!-- Strat of Facebook Meta -->
-    <meta property="og:type" content="E-Greeting" />
-    <meta property="og:image" content="favicon.ico" />
-    <meta property="og:description" content="Wish you a very Happy Birthday">
-    <!-- End of Facebook Meta Tags -->
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
-	<meta name="apple-mobile-web-app-capable" content="yes">
-	<meta name="apple-mobile-web-app-status-bar-style" content="black">
-	<meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE" />
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="stylesheet.css">
-	<link rel="stylesheet" type="text/css" href="loading.css">
-	<link href='http://fonts.googleapis.com/css?family=Signika' rel='stylesheet' type='text/css'>
-	<!-- <link href='http://fonts.googleapis.com/css?family=Nunito' rel='stylesheet' type='text/css'> -->
-	<link rel="stylesheet/less" href="cake.less"> 
-	<style type="text/css" id="less:birthday-cake">
-    
-    /* ============================================== POSITION
-*/
-.cake {
-  position: absolute;
-  display: none;
-  left: 50%;
-  margin-left: -150px;
-  width: 300px;
-  height: 300px;
-}
-/* ============================================== BASE
-*/
-.cake:after {
-  background: #ffffff;
-  border-radius: 300px;
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 300px;
-  height: 6px;
-}
-/* ============================================== Candle
-*/
-.velas {
-  background: #ffffff;
-  border-radius: 100%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-left: -7.5px;
-  margin-top: -25px;
-  width: 15px;
-  height: 50px;
-}
-.velas:after,
-.velas:before {
-  background: rgba(255, 0, 0, 0.4);
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 6.66666667px;
-}
-.velas:after {
-  top: 25%;
-  left: 0;
-}
-.velas:before {
-  top: 45%;
-  left: 0;
-}
-/* ============================================== Fire
-*/
-.fuego {
-  display: none;
-  border-radius: 100%;
-  box-shadow: 0 0 40px 10px rgba(248, 233, 209, 0.2);
-  position: absolute;
-  top: -12px;
-  left: 50%;
-  margin-left: -10px;
-  width: 20px;
-  height: 37.5px;
-}
-.fuego:nth-child(1) {
-  -webkit-animation: fuego 2s infinite;
-  -moz-animation: fuego 2s infinite;
-  -o-animation: fuego 2s infinite;
-  -ms-animation: fuego 2s infinite;
-  animation: fuego 2s infinite;
-}
-.fuego:nth-child(2) {
-  -webkit-animation: fuego 1.5s infinite;
-  -moz-animation: fuego 1.5s infinite;
-  -o-animation: fuego 1.5s infinite;
-  -ms-animation: fuego 1.5s infinite;
-  animation: fuego 1.5s infinite;
-}
-.fuego:nth-child(3) {
-  -webkit-animation: fuego 1s infinite;
-  -moz-animation: fuego 1s infinite;
-  -o-animation: fuego 1s infinite;
-  -ms-animation: fuego 1s infinite;
-  animation: fuego 1s infinite;
-}
-.fuego:nth-child(4) {
-  -webkit-animation: fuego 0.5s infinite;
-  -moz-animation: fuego 0.5s infinite;
-  -o-animation: fuego 0.5s infinite;
-  -ms-animation: fuego 0.5s infinite;
-  animation: fuego 0.5s infinite;
-}
-.fuego:nth-child(5) {
-  -webkit-animation: fuego 0.2s infinite;
-  -moz-animation: fuego 0.2s infinite;
-  -o-animation: fuego 0.2s infinite;
-  -ms-animation: fuego 0.2s infinite;
-  animation: fuego 0.2s infinite;
-}
-/* ============================================== Animation Fire
-*/
-@-webkit-keyframes fuego {
-  0% {
-    background: rgba(254, 248, 97, 0.5);
-    -webkit-transform: translateY(0) scale(1);
-  }
-  50% {
-    background: rgba(255, 50, 0, 0.1);
-    -webkit-transform: translateY(-60px) scale(0);
-  }
-  100% {
-    background: rgba(254, 248, 97, 0.5);
-    -webkit-transform: translateY(0) scale(1);
-  }
-}
-@-moz-keyframes fuego {
-  0% {
-    background: rgba(254, 248, 97, 0.5);
-    -moz-transform: translateY(0) scale(1);
-  }
-  50% {
-    background: rgba(255, 50, 0, 0.1);
-    -moz-transform: translateY(-60px) scale(0);
-  }
-  100% {
-    background: rgba(254, 248, 97, 0.5);
-    -moz-transform: translateY(0) scale(1);
-  }
-}
-@-o-keyframes fuego {
-  0% {
-    background: rgba(254, 248, 97, 0.5);
-    -o-transform: translateY(0) scale(1);
-  }
-  50% {
-    background: rgba(255, 50, 0, 0.1);
-    -o-transform: translateY(-60px) scale(0);
-  }
-  100% {
-    background: rgba(254, 248, 97, 0.5);
-    -o-transform: translateY(0) scale(1);
-  }
-}
-@-ms-keyframes fuego {
-  0% {
-    background: rgba(254, 248, 97, 0.5);
-    -ms-transform: translateY(0) scale(1);
-  }
-  50% {
-    background: rgba(255, 50, 0, 0.1);
-    -ms-transform: translateY(-60px) scale(0);
-  }
-  100% {
-    background: rgba(254, 248, 97, 0.5);
-    -ms-transform: translateY(0) scale(1);
-  }
-}
-@keyframes fuego {
-  0% {
-    background: rgba(254, 248, 97, 0.5);
-    transform: translateY(0) scale(1);
-  }
-  50% {
-    background: rgba(255, 50, 0, 0.1);
-    transform: translateY(-60px) scale(0);
-  }
-  100% {
-    background: rgba(254, 248, 97, 0.5);
-    transform: translateY(0) scale(1);
-  }
-}
-/* ============================================== Frosting
-*/
-.cobertura {
-  background: #ece7e3;
-  border-radius: 150px;
-  position: absolute;
-  top: 60%;
-  left: 50%;
-  margin-left: -83.33333333px;
-  margin-top: -15px;
-  width: 166.66666667px;
-  height: 37.5px;
-  z-index: 10;
-}
-.cobertura:after,
-.cobertura:before {
-  background: #ece7e3;
-  border-radius: 300px;
-  content: "";
-  position: absolute;
-  width: 15px;
-  height: 30px;
-}
-.cobertura:after {
-  top: 20px;
-  right: 42.85714286px;
-}
-.cobertura:before {
-  top: 30px;
-  right: 27.27272727px;
-}
-/* ============================================== BIZCOCHO
-*/
-.bizcocho {
-  background: #6d3826;
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  margin-left: -75px;
-  width: 150px;
-  height: 100px;
-}
-.bizcocho:after,
-.bizcocho:before {
-  background: rgba(236, 231, 227, 0.6);
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 15px;
-}
-.bizcocho:after {
-  top: 30%;
-  left: 0;
-}
-.bizcocho:before {
-  top: 60%;
-  left: 0;
-}
-/* ============================================== TEXT
-*/
-h1,
-p {
-  font-family: 'Lato', sans-serif;
-  font-weight: 300;
-  font-style: italic;
-  text-align: center;
-  width: 100%;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
+  <link rel="author" href="alex" /> 
+  <meta name="keywords" content="Sinh nhật, Chúc mừng, Ngọc Hạ">
+  <meta property="og:type" content="E-Greeting" />
+  <meta property="og:image" content="favicon.ico" />
+  <meta property="og:description" content="Happy Birthday Ngọc Hạ – Chúc em thật nhiều niềm vui!" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <link rel="stylesheet" type="text/css" href="loading.css">
+  <link href="http://fonts.googleapis.com/css?family=Signika" rel="stylesheet" type="text/css">
+  <link rel="stylesheet/less" href="cake.less"> 
+  <!-- Font Awesome cho icon nút -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-.profile-img {
-  position: absolute;
-  left: 400px;
-  top: 150px;
-  width: 150px;
-  height: 150px; 
-}
+  <style type="text/css" id="less:birthday-cake">
+  /* ================== BÁNH & HIỆU ỨNG NẾN (giữ nguyên) ================== */
+  .cake{position:absolute;display:none;left:50%;margin-left:-150px;width:300px;height:300px;}
+  .cake:after{background:#fff;border-radius:300px;content:"";position:absolute;bottom:0;left:0;width:300px;height:6px;}
+  .velas{background:#fff;border-radius:100%;position:absolute;top:50%;left:50%;margin-left:-7.5px;margin-top:-25px;width:15px;height:50px;}
+  .velas:after,.velas:before{background:rgba(255,0,0,.4);content:"";position:absolute;width:100%;height:6.6667px;}
+  .velas:after{top:25%;left:0;} .velas:before{top:45%;left:0;}
+  .fuego{display:none;border-radius:100%;box-shadow:0 0 40px 10px rgba(248,233,209,.2);position:absolute;top:-12px;left:50%;margin-left:-10px;width:20px;height:37.5px;}
+  .fuego:nth-child(1){animation:fuego 2s infinite;} .fuego:nth-child(2){animation:fuego 1.5s infinite;}
+  .fuego:nth-child(3){animation:fuego 1s infinite;} .fuego:nth-child(4){animation:fuego .5s infinite;} .fuego:nth-child(5){animation:fuego .2s infinite;}
+  @keyframes fuego{0%{background:rgba(254,248,97,.5);transform:translateY(0) scale(1);}50%{background:rgba(255,50,0,.1);transform:translateY(-60px) scale(0);}100%{background:rgba(254,248,97,.5);transform:translateY(0) scale(1);}}
+  .cobertura{background:#ece7e3;border-radius:150px;position:absolute;top:60%;left:50%;margin-left:-83.3333px;margin-top:-15px;width:166.6667px;height:37.5px;z-index:10;}
+  .cobertura:after,.cobertura:before{background:#ece7e3;border-radius:300px;content:"";position:absolute;width:15px;height:30px;}
+  .cobertura:after{top:20px;right:42.8571px;} .cobertura:before{top:30px;right:27.2727px;}
+  .bizcocho{background:#6d3826;position:absolute;bottom:0;left:50%;margin-left:-75px;width:150px;height:100px;}
+  .bizcocho:after,.bizcocho:before{background:rgba(236,231,227,.6);content:"";position:absolute;width:100%;height:15px;}
+  .bizcocho:after{top:30%;left:0;} .bizcocho:before{top:60%;left:0;}
+  h1,p{font-family:'Lato',sans-serif;font-weight:300;font-style:italic;text-align:center;width:100%;user-select:none;}
+  .profile-img{position:absolute;left:400px;top:150px;width:150px;height:150px;}
 
-</style>
-	<script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.1.0/less.min.js"></script>
+  /* ================== KHUNG TRÁI TIM HAI BÊN ==================
+     - PC: dính hai bên (position: fixed)
+     - Mobile: chuyển thành lưới 2 cột, nằm dưới nội dung
+  */
+  .heart-frame{
+    width:120px;height:auto;margin:15px auto;text-align:center;position:relative;
+    opacity:0;transform:translateY(10px) scale(.96);transition:opacity .6s ease,transform .6s ease,filter .6s ease;filter:brightness(.7);
+  }
+  .heart-frame.visible{opacity:1;transform:translateY(0) scale(1);filter:brightness(1);}
+  .heart-frame::before{content:"";position:absolute;inset:-6px;border-radius:24px;background:linear-gradient(135deg,#ff74b1,#ffd1e6);z-index:-1;filter:blur(6px);opacity:.75;}
+  .heart-frame img{width:100%;height:auto;object-fit:cover;background:rgba(255,255,255,.9);border-radius:18px;box-shadow:0 10px 22px rgba(255,92,162,.25), inset 0 0 0 6px rgba(255,255,255,.7);padding:8px;}
+  .heart-text{font-size:12px;font-weight:700;line-height:1.1;color:#ff3366;margin-top:4px;text-shadow:1px 1px 2px #fff,0 0 6px rgba(255,51,102,.6);}
+  .heart-wish{font-size:12px;color:#d6336c;margin-top:2px;font-style:italic;}
+  .side-decor{position:fixed;top:50%;transform:translateY(-50%);z-index:999;display:flex;flex-direction:column;gap:10px;pointer-events:none;}
+  .side-left{left:10px;} .side-right{right:10px;}
+
+  /* ================== NÚT ĐẸP + ICON ================== */
+  .navbar.navbar-fixed-bottom{background:transparent;border:0;}
+  .btn.pretty{background:linear-gradient(135deg,#ff5ca2,#ff80bf);border:0;color:#fff !important;border-radius:28px;padding:10px 18px;font-weight:700;box-shadow:0 6px 14px rgba(255,92,162,.45);transition:transform .15s ease,box-shadow .15s ease,filter .2s ease;}
+  .btn.pretty i{margin-right:8px;}
+  .btn.pretty:hover{transform:translateY(-2px);box-shadow:0 10px 20px rgba(255,92,162,.55);filter:brightness(1.05);}
+  .btn.pretty:active{transform:translateY(0);box-shadow:0 6px 14px rgba(255,92,162,.45);}
+
+  /* ================== MOBILE RESPONSIVE ==================
+     -> Đưa trái tim xuống dưới, hiển thị dạng lưới 2 cột
+     -> Tăng khoảng cách nút cho dễ bấm
+  */
+  @media (max-width: 768px){
+    .side-decor{
+      position:relative; /* không dính màn hình nữa */
+      top:auto;transform:none;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));
+      gap:12px;justify-items:center;opacity:0;margin:20px 12px 10px;
+      pointer-events:auto; /* có thể bấm/scroll bình thường */
+    }
+    .heart-frame{width:100%;max-width:160px;}
+    .heart-text{font-size:12px;} .heart-wish{font-size:11px;}
+    .navbar .btn.pretty{margin:4px 3px;padding:12px 16px;border-radius:30px;} /* nút lớn hơn tí cho ngón tay */
+  }
+
+  /* Màn rất nhỏ: 1 cột cho chắc */
+  @media (max-width: 420px){
+    .side-decor{grid-template-columns:1fr;}
+    .heart-frame{max-width:220px;}
+  }
+  </style>
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.1.0/less.min.js"></script>
 </head>
 
 <body>
-	<div class="loading"></div>
-	<audio class="song" controls loop>
-        <source src="hbd.mp3"></source>
-	   Your browser isn't invited for super fun audio time.
-    </audio>
-    <div class="balloons text-center" id="b1">
-    	<h2 style="color:#F2B300;">H</h2>
+  <div class="loading"></div>
+
+  <!-- NHẠC -->
+  <audio class="song" controls loop>
+    <source src="hbd.mp3"></source>
+    Trình duyệt của bạn không hỗ trợ phát nhạc.
+  </audio>
+
+  <!-- BÓNG BAY -->
+  <div class="balloons text-center" id="b2"><h2 style="color:#0719D4;">H</h2></div>
+  <div class="balloons text-center" id="b1"><h2 style="color:#F2B300;">N</h2></div>
+  <div class="balloons text-center" id="b3"><h2 style="color:#D14D39;">Ọ</h2></div>
+  <div class="balloons text-center" id="b3"><h2 style="color:#D14D39;">C</h2></div>
+  <div class="balloons text-center" id="b4"><h2 style="color:#8FAD00;">💖</h2></div>
+  <div class="balloons text-center" id="b6"><h2 style="color:#99C96A;">H</h2></div>
+  <div class="balloons text-center" id="b7"><h2 style="color:#20CFB4;">Ạ</h2></div>
+
+  <img src="Balloon-Border.png" width="100%" class="balloon-border" alt="Border">
+
+  <!-- ========== KHUNG TRÁI TIM (PC: hai bên, Mobile: chuyển xuống dưới) ========== -->
+  <!-- Bên trái -->
+  <div class="side-decor side-left">
+    <div class="heart-frame">
+      <img src="Ha1.jpg" alt="Heart">
+      <div class="heart-text">Happy Birthday<br>Ngọc Hạ</div>
+      <p class="heart-wish">Chúc em luôn rạng rỡ như ánh nắng mai</p>
     </div>
-    <div class="balloons text-center" id="b2">
-    	<h2 style="color:#0719D4;">B</h2>
+    <div class="heart-frame">
+      <img src="Ha2.jpg" alt="Heart">
+      <div class="heart-text">Happy Birthday<br>Ngọc Hạ</div>
+      <p class="heart-wish">Mong em gặp thật nhiều niềm vui bất ngờ</p>
     </div>
-	<div class="balloons text-center" id="b3">
-    	<h2 style="color:#D14D39;">D</h2>
+    <div class="heart-frame">
+      <img src="Ha3.jpg" alt="Heart">
+      <div class="heart-text">Happy Birthday<br>Ngọc Hạ</div>
+      <p class="heart-wish">Mỗi ngày trôi qua đều ngọt ngào như hôm nay</p>
     </div>
-	<div class="balloons text-center" id="b4">
-    	<h2 style="color:#8FAD00;">Z</h2>
+  </div>
+  <!-- Bên phải -->
+  <div class="side-decor side-right">
+    <div class="heart-frame">
+      <img src="Ha4.jpg" alt="Heart">
+      <div class="heart-text">Happy Birthday<br>Ngọc Hạ</div>
+      <p class="heart-wish">Chúc em hạnh phúc trọn vẹn và an yên</p>
     </div>
-	<div class="balloons text-center" id="b5">
-    	<h2 style="color:#8377E4;">Z</h2>
+    <div class="heart-frame">
+      <img src="Ha5.jpg" alt="Heart">
+      <div class="heart-text">Happy Birthday<br>Ngọc Hạ</div>
+      <p class="heart-wish">Luôn được yêu thương và trân trọng</p>
     </div>
-    <div class="balloons text-center" id="b6">
-    	<h2 style="color:#99C96A;">Z</h2>
+    <div class="heart-frame">
+      <img src="Ha6.jpg" alt="Heart">
+      <div class="heart-text">Happy Birthday<br>Ngọc Hạ</div>
+      <p class="heart-wish">Năm mới tuổi mới, niềm vui mới</p>
     </div>
-    <div class="balloons text-center" id="b7">
-    	<h2 style="color:#20CFB4;">Z</h2>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-2 col-xs-2 bulb-holder"><div class="bulb" id="bulb_yellow"></div></div>
+      <div class="col-md-2 col-xs-2 bulb-holder"><div class="bulb" id="bulb_red"></div></div>
+      <div class="col-md-2 col-xs-2 bulb-holder"><div class="bulb" id="bulb_blue"></div></div>
+      <div class="col-md-2 col-xs-2 bulb-holder"><div class="bulb" id="bulb_green"></div></div>
+      <div class="col-md-2 col-xs-2 bulb-holder"><div class="bulb" id="bulb_pink"></div></div>
+      <div class="col-md-2 col-xs-2 bulb-holder"><div class="bulb" id="bulb_orange"></div></div>
     </div>
 
-    <img src="Balloon-Border.png" width="100%" class="balloon-border">
- 
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <img src="banner.png" class="bannar" alt="Banner">
+      </div>
+    </div>
 
-	<div class="container">
-		
-		<div class="row">
-			<div class="col-md-2 col-xs-2 bulb-holder">
-				<div class="bulb" id="bulb_yellow"></div>
-			</div>
-			<div class="col-md-2 col-xs-2 bulb-holder">
-				<div class="bulb" id="bulb_red"></div>
-			</div>
-			<div class="col-md-2 col-xs-2 bulb-holder">
-				<div class="bulb" id="bulb_blue"></div>
-			</div>
-			<div class="col-md-2 col-xs-2 bulb-holder">
-				<div class="bulb" id="bulb_green"></div>
-			</div>
-			<div class="col-md-2 col-xs-2 bulb-holder">
-				<div class="bulb" id="bulb_pink"></div>
-			</div>
-			<div class="col-md-2 col-xs-2 bulb-holder">
-				<div class="bulb" id="bulb_orange"></div>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-md-12 text-center">
-				<img src="banner.png" class="bannar">
-			</div>
-		</div>
-		<!-- <div class="row message">
-			<div class="col-md-12"><p>Khushbu</p></div>
-		</div> -->
-		<div class="row cake-cover">
-			<div class="col-md-12 texr-center">
-				<div class="cake">
-				  <div class="velas">
-				    <div class="fuego"></div>
-				    <div class="fuego"></div>
-				    <div class="fuego"></div>
-				    <div class="fuego"></div>
-				    <div class="fuego"></div>
-				  </div>
-				  <div class="cobertura"></div>
-          <img src="person.png" class="profile-img">
-				  <div class="bizcocho"></div>
-				</div>
-			</div>
-		</div>
-		<div class="row message">
-			<div class="col-md-12">
-				<p>Today is...</p>
-				<p>as beautiful as other days</p>
-				<p>but you realize</p>
-				<p>another year has gone</p>
-				<p>in a blink of the eyes</p>
-				<p><strong>however</strong></p>
-				<p>Do you know..?</p>
-				<p>today is just special</p>
-				<p>so special to you</p>
-				<p>that's why</p>
-				<p>Let's make it...</p>
-				<p>the best celebration ever</p>
-				<p>and let me share...</p>
-				<p>a piece of happiness to you</p>
-				<p>I made all this...</p>
-				<p>as a birthday present to you</p>
-				<p>I'm glad we met on zzz</p>
-				<p>thanks for the friendship we made</p>
-				<p>thanks for everything</p>
-				<p>I wish you all the best</p>
-				<p>May your life be at ease</p>
-				<p>May all your wishes come true</p>
-				<p>Remember</p>
-				<p>your ambitions</p>
-				<p>you live as a free bird...</p>
-				<p>flying in the blue sky</p>
-				<p>Now things are different...</p>
-				<p>real story of your life</p>
-				<p>is just about to begin</p>
-				<p>indeed..</p>
-				<p>but...</p>
-				<p>don't worry</p>
-				<p>because...</p>
-				<p>God has your back</p>
-				<p>and</p>
-				<p>this year will be better</p>
-				<p>and I hope</p>
-				<p>you'll find...</p>
-				<p>happiness along the way</p>
-				<p>keep your spirit up</p>
-				<p>enjoy every single moment...</p>
-				<p>that you experience today</p>
-				<p>fill it with your most beautiful smile</p>
-				<p>and make it the best memory..</p>
-				<p>lastly...</p>
-				<p>I'd like to wish you one more time</p>
-				<p>a very happy birthday zzz ❤️</p>
+    <div class="row cake-cover">
+      <div class="col-md-12 texr-center">
+        <div class="cake">
+          <div class="velas">
+            <div class="fuego"></div><div class="fuego"></div><div class="fuego"></div><div class="fuego"></div><div class="fuego"></div>
+          </div>
+          <div class="cobertura"></div>
+          <img src="person.png" class="profile-img" alt="Ngọc Hạ">
+          <div class="bizcocho"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- LỜI CHÚC -->
+    <div class="row message">
+      <div class="col-md-12">
+        <p>Hôm nay là...</p>
+        <p>xinh đẹp như mọi ngày khác</p>
+        <p>nhưng em nhận ra</p>
+        <p>một năm nữa đã trôi qua</p>
+        <p>chỉ trong chớp mắt</p>
+        <p><strong>tuy nhiên</strong></p>
+        <p>Em có biết không..?</p>
+        <p>hôm nay thật đặc biệt</p>
+        <p>rất đặc biệt với em</p>
+        <p>đó là lý do</p>
+        <p>hãy biến nó thành...</p>
+        <p>một lễ kỷ niệm tuyệt vời nhất</p>
+        <p>và để anh chia sẻ...</p>
+        <p>một chút hạnh phúc đến em</p>
+        <p>anh đã làm tất cả những điều này...</p>
+        <p>như một món quà sinh nhật dành cho em</p>
+        <p>anh rất vui vì đã gặp được em – Ngọc Hạ</p>
+        <p>cảm ơn vì tình cảm và những kỷ niệm chúng ta có</p>
+        <p>cảm ơn vì tất cả</p>
+        <p>anh chúc em mọi điều tốt đẹp nhất</p>
+        <p>mong cuộc sống của em luôn nhẹ nhàng</p>
+        <p>mong mọi ước mơ của em trở thành hiện thực</p>
+        <p>hãy nhớ</p>
+        <p>những hoài bão của em</p>
+        <p>em là chú chim tự do...</p>
+        <p>bay trên bầu trời xanh</p>
+        <p>bây giờ mọi thứ đã khác...</p>
+        <p>câu chuyện thật sự của đời em</p>
+        <p>đang bắt đầu</p>
+        <p>đúng vậy..</p>
+        <p>nhưng...</p>
+        <p>đừng lo</p>
+        <p>vì...</p>
+        <p>Chúa luôn ở bên em</p>
+        <p>và</p>
+        <p>năm nay sẽ tốt đẹp hơn</p>
+        <p>và anh hy vọng</p>
+        <p>em sẽ tìm thấy...</p>
+        <p>niềm hạnh phúc trên con đường của mình</p>
+        <p>giữ vững tinh thần nhé</p>
+        <p>tận hưởng từng khoảnh khắc...</p>
+        <p>mà em trải nghiệm hôm nay</p>
+        <p>lấp đầy nó bằng nụ cười đẹp nhất của em</p>
+        <p>và biến nó thành ký ức tuyệt vời nhất..</p>
+        <p>cuối cùng...</p>
+        <p>anh muốn chúc em thêm một lần nữa</p>
+        <p>một sinh nhật thật hạnh phúc, Ngọc Hạ ❤️</p>
         <p>❤️</p>
-			</div>
-		</div>
-		<div class="navbar navbar-fixed-bottom">
-			<div class="row">
-				<div class="col-md-6 text-center col-md-offset-3">
-					<button class="btn btn-primary" id="turn_on">Turn On Lights</button>
-					<button class="btn btn-primary" id="play">Play the Music Buddy</button>
-					<button class="btn btn-primary" id="bannar_coming">Let's Decorate</button>
-					<button class="btn btn-primary" id="balloons_flying">Calm, i got you some baloons</button>
-					<button class="btn btn-primary" id="cake_fadein">Cake? of course!</button>
-					<button class="btn btn-primary" id="light_candle">Don't forget to Light the Candle</button>
-					<button class="btn btn-primary" id="wish_message">Happy Birthday</button>
-					<button class="btn btn-primary" id="story">A mesage for you</button>
-					<!-- <button class="btn btn-primary" id="cake_cut">Lrt's Cut the Cake</button> -->
-				</div>
-			</div>
-			<!-- <div class="col-md-2">
-			</div>
-			<div class="col-md-2">
-			</div>
-			<div class="col-md-2">
-			</div>
-			<div class="col-md-2">
-			</div>
-			<div class="col-md-2">
-			</div> -->
-		</div>
+      </div>
+    </div>
 
+    <!-- NÚT (giữ vị trí gốc, thêm class + icon) -->
+    <div class="navbar navbar-fixed-bottom">
+      <div class="row">
+        <div class="col-md-6 text-center col-md-offset-3">
+          <button class="btn btn-primary pretty" id="turn_on"><i class="fa-solid fa-lightbulb"></i>Bật đèn</button>
+          <button class="btn btn-primary pretty" id="play"><i class="fa-solid fa-music"></i>Phát nhạc</button>
+          <button class="btn btn-primary pretty" id="bannar_coming"><i class="fa-solid fa-wand-magic-sparkles"></i>Trang trí nào</button>
+          <button class="btn btn-primary pretty" id="balloons_flying"><i class="fa-solid fa-balloon"></i>Anh có bóng bay cho em</button>
+          <button class="btn btn-primary pretty" id="cake_fadein"><i class="fa-solid fa-cake-candles"></i>Bánh? Tất nhiên rồi!</button>
+          <button class="btn btn-primary pretty" id="light_candle"><i class="fa-solid fa-fire"></i>Đừng quên thắp nến nhé</button>
+          <button class="btn btn-primary pretty" id="wish_message"><i class="fa-solid fa-heart"></i>Chúc Mừng Sinh Nhật</button>
+          <button class="btn btn-primary pretty" id="story"><i class="fa-solid fa-comment-dots"></i>Lời nhắn dành cho em</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
-	</div>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
@@ -452,7 +264,35 @@ p {
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-8SQ2H9J48M');
+</script>
+
+<!-- ========== JS: Bấm "Bật đèn" -> 6 ảnh xuất hiện dần ==========
+     - PC: xuất hiện theo thứ tự nhưng vẫn dính 2 bên
+     - Mobile: do .side-decor chuyển thành grid nên ảnh hiện dưới nội dung
+-->
+<script>
+(function(){
+  var hasShownHearts = false;
+  var btnTurnOn = document.getElementById('turn_on');
+
+  function revealHearts(){
+    if(hasShownHearts) return;          // tránh chạy lại
+    hasShownHearts = true;
+
+    // lấy tất cả khung trái + phải theo thứ tự
+    var frames = document.querySelectorAll('.side-decor .heart-frame');
+    frames.forEach(function(el, idx){
+      setTimeout(function(){
+        // đảm bảo container hiện (trong mobile container opacity:0 ban đầu)
+        el.parentElement.style.opacity = 1;
+        // thêm class để fade-in
+        el.classList.add('visible');
+      }, idx * 280);                    // mỗi ảnh cách nhau 0.28s
+    });
+  }
+
+  if(btnTurnOn){ btnTurnOn.addEventListener('click', revealHearts); }
+})();
 </script>
 </html>
